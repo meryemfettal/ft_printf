@@ -6,13 +6,13 @@
 /*   By: mfettal <mfettal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 16:37:00 by mfettal           #+#    #+#             */
-/*   Updated: 2023/04/19 17:17:12 by mfettal          ###   ########.fr       */
+/*   Updated: 2023/04/23 19:23:19 by mfettal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_hexanbr(unsigned int nbr, char n, int *len)
+void	ft_hexanbr(unsigned int nbr, char n, long *len)
 {
 	char	*base;
 

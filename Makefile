@@ -6,7 +6,7 @@
 #    By: mfettal <mfettal@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/16 15:54:48 by mfettal           #+#    #+#              #
-#    Updated: 2023/04/21 15:04:10 by mfettal          ###   ########.fr        #
+#    Updated: 2023/04/24 15:12:19 by mfettal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ $(NAME) : $(EXC)
 	ar -rc $(NAME) $(EXC)
 
 
-clean:
+clean
 		rm -rf $(EXC)
 
 fclean: clean

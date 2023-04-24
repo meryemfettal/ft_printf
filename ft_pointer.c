@@ -6,13 +6,13 @@
 /*   By: mfettal <mfettal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 17:17:37 by mfettal           #+#    #+#             */
-/*   Updated: 2023/04/19 17:33:11 by mfettal          ###   ########.fr       */
+/*   Updated: 2023/04/24 16:30:43 by mfettal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_hexapnbr(unsigned int nbr, char n, int *len)
+void	ft_hexapnbr(unsigned long nbr, char n, long *len)
 {
 	char	*base;
 
@@ -31,11 +31,11 @@ void	ft_hexapnbr(unsigned int nbr, char n, int *len)
 	}
 }
 
-void	ft_pointer(int *adr, int *len)
+void	ft_pointer(unsigned long *adr, long *len)
 {
-	unsigned long int	ptr;
+	unsigned long	ptr;
 
-	ptr = (unsigned long int)adr;
+	ptr = (unsigned long)adr;
 	ft_putstr("0x", len);
 	ft_hexapnbr(ptr, 'x', len);
 }

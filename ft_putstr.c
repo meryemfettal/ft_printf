@@ -6,13 +6,13 @@
 /*   By: mfettal <mfettal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 15:48:15 by mfettal           #+#    #+#             */
-/*   Updated: 2023/04/19 16:32:39 by mfettal          ###   ########.fr       */
+/*   Updated: 2023/04/23 19:27:22 by mfettal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putstr(char *s, int *len)
+void	ft_putstr(char *s, long *len)
 {
 	int	i;
 
@@ -20,6 +20,7 @@ void	ft_putstr(char *s, int *len)
 	if (!s)
 	{
 		write(1, "(null)", 6);
+		*(len) += 6;
 		return ;
 	}
 	while (s[i] != '\0')
@@ -29,10 +30,10 @@ void	ft_putstr(char *s, int *len)
 	}
 }
 
-/*int main()
-{
-	int len = 0;
+// int main()
+// {
+// 	int len = 0;
 
-	ft_putstr("", &len);
-	printf("\n%d", len);
-}*/
+// 	ft_putstr("",  &len);
+// 	printf("\n%d", len);
+// }

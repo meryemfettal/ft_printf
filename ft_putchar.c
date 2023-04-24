@@ -6,13 +6,13 @@
 /*   By: mfettal <mfettal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 15:44:14 by mfettal           #+#    #+#             */
-/*   Updated: 2023/04/19 15:47:55 by mfettal          ###   ########.fr       */
+/*   Updated: 2023/04/23 19:23:19 by mfettal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putchar(int c, int *len)
+void	ft_putchar(int c, long *len)
 {
 	write(1, &c, 1);
 	(*len)++;

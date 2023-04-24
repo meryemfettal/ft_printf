@@ -6,13 +6,13 @@
 /*   By: mfettal <mfettal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 15:53:59 by mfettal           #+#    #+#             */
-/*   Updated: 2023/04/19 16:03:48 by mfettal          ###   ########.fr       */
+/*   Updated: 2023/04/23 19:23:19 by mfettal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putnbr(int n, int *len)
+void	ft_putnbr(int n, long *len)
 {
 	unsigned int	nbr;
 

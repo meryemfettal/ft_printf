@@ -6,13 +6,13 @@
 /*   By: mfettal <mfettal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 16:04:28 by mfettal           #+#    #+#             */
-/*   Updated: 2023/04/19 16:38:44 by mfettal          ###   ########.fr       */
+/*   Updated: 2023/04/23 19:23:19 by mfettal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putunbr(unsigned int n, int *len)
+void	ft_putunbr(unsigned int n, long *len)
 {
 	if (n < 10)
 	{
