@@ -37,7 +37,7 @@ $(NAME) : $(EXC)
 	ar -rc $(NAME) $(EXC)
 
 
-clean
+clean:
 		rm -rf $(EXC)
 
 fclean: clean
